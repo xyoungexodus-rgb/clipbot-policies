@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — ClipBot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: July 20, 2026</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+
+  <p>
+    ClipBot ("the application") is operated by an individual developer,
+    William Hamilton, as a personal, non-commercial project. This policy
+    explains what data the application accesses and how it is used.
+  </p>
+
+  <h2>What ClipBot does</h2>
+  <p>
+    ClipBot is a single-user automation tool. It has no public sign-in, no
+    accounts, and no end users other than its operator. It:
+  </p>
+  <ul>
+    <li>Reads public clip metadata (title, broadcaster name, view count, video
+      file) from Twitch's public Helix API.</li>
+    <li>Processes that video locally/in a private CI pipeline (cropping,
+      captioning, re-encoding).</li>
+    <li>Uploads the resulting video to the operator's own YouTube channel
+      using the YouTube Data API.</li>
+  </ul>
+  <p>
+    No third party ever submits data to ClipBot, and ClipBot does not serve
+    any public-facing product, app, or website that collects visitor data
+    beyond standard, anonymous GitHub Pages hosting logs for this static
+    site.
+  </p>
+
+  <h2>Google user data</h2>
+  <p>
+    ClipBot authenticates once, via OAuth 2.0, to the operator's own Google
+    account, requesting only the
+    <code>https://www.googleapis.com/auth/youtube.upload</code> scope. This
+    scope is used exclusively to upload videos to the operator's own YouTube
+    channel. ClipBot does not read, modify, or delete any other data in the
+    operator's Google Account, and does not access the data of any other
+    Google user.
+  </p>
+  <p>
+    The OAuth access/refresh token is stored only in a local file on the
+    operator's own machine and as an encrypted secret in the operator's
+    private GitHub Actions environment. It is never transmitted to, or
+    accessible by, any third party.
+  </p>
+  <p>
+    Any use and transfer of information received from Google APIs to any
+    other app will adhere to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.
+  </p>
+
+  <h2>Data retention and deletion</h2>
+  <p>
+    The operator can revoke ClipBot's access at any time from
+    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account &rarr; Security &rarr; Third-party access</a>,
+    which immediately invalidates the stored token. To request deletion of
+    any data related to this application, contact the email address below.
+  </p>
+
+  <h2>Twitch data</h2>
+  <p>
+    ClipBot only reads public clip information exposed by Twitch's Helix API
+    (clip title, broadcaster name, view count, game category, video file). It
+    does not access private Twitch account data, does not require a Twitch
+    login, and does not use Twitch user OAuth scopes.
+  </p>
+
+  <h2>Streamer takedown requests</h2>
+  <p>
+    Any streamer who would prefer their clips not be featured can email the
+    address below at any time; the request will be honored the same day.
+  </p>
+
+  <h2>Children's privacy</h2>
+  <p>
+    ClipBot is not directed at children and does not knowingly collect data
+    from anyone. It has no sign-up flow or public user accounts of any kind.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    This policy may be updated as the application changes. The "Last
+    updated" date at the top of this page will reflect the most recent
+    revision.
+  </p>
+
+  <h2>Google's own privacy disclosures</h2>
+  <p>
+    For more on how Google handles data:
+  </p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+    <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a></li>
+    <li><a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a></li>
+  </ul>
+
+  <footer>
+    <p>Contact: <a href="mailto:xyoungexodus@gmail.com">xyoungexodus@gmail.com</a></p>
+  </footer>
+</body>
+</html>
